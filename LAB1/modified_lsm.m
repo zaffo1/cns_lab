@@ -43,8 +43,10 @@ for t=1:size(input,2)            % simulation of 1000 ms
   u=u+a.*(b.*v-u);                 % stability
   
   states = [states (v>=30)]; 
-  
+
 end
 plot(firings(:,1),firings(:,2),'.');
+
+
 
 % in the end states is 1000 x number of time steps
